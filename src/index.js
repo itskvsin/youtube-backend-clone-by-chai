@@ -5,29 +5,20 @@ import dotenv from "dotenv";
 import connectDb from "./db/index.js";
 
 dotenv.config({
-    path: "./env"
-})
+  path: "./env",
+});
 
-connectDb();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+connectDb()
+  .then(() => {
+    app.listen(process.env.PORT || 3000);
+    app.on("error", (err) => {
+      console.log("ERR: ", error);
+      throw error;
+    });
+  })
+  .catch((err) => {
+    console.log("Mongo Error", err);
+  });
 
 /*
 import express from "express";
