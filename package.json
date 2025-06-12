@@ -1,0 +1,16 @@
+{
+  "name": "youtube-and-chai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chai",
+    "javascript",
+    "backend"
+  ],
+  "author": "Kevin B. Solanki",
+  "license": "ISC",
+  "description": "In this , I will be creating a backend taking reference from youtube and chai"
+}
