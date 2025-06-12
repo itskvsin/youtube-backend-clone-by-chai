@@ -2,8 +2,9 @@
   "name": "youtube-and-chai",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "chai",
@@ -12,5 +13,8 @@
   ],
   "author": "Kevin B. Solanki",
   "license": "ISC",
-  "description": "In this , I will be creating a backend taking reference from youtube and chai"
+  "description": "In this , I will be creating a backend taking reference from youtube and chai",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
