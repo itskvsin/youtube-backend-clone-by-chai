@@ -152,7 +152,7 @@ const logoutUser = asyncHandler(async (req, res) => {
   //Clear the cookie
   //clear the access and refresh token
   // User.findById()
-  User.findByIdAndUpdate(
+  await User.findByIdAndUpdate(
     await req.user._id,
     {
       $set: {
